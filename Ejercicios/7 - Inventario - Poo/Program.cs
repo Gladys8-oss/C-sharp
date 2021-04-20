@@ -6,6 +6,9 @@ class Program
 {
 static void Main(string[] args)
 {
+    Login login = new Login();
+    login.user();
+	
     string opcion = "";
     Inventario inventario = new Inventario ();
     while (true)
@@ -61,6 +64,10 @@ static void Main(string[] args)
 
             case "9":
             inventario.ListarOrdenes();
+            break;
+
+            case "10":
+         // inventario.movimientoInventarioClientes();
             break;
             default:
             break;

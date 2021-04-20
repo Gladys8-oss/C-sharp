@@ -104,15 +104,28 @@ public class Inventario
                 } 
             }
         }
-
-        //GUARDAR DATOS DE CLIENTES
-        /* private void movimientoClientes(string nombre, string apellido, string correo, string direccion, string telefono) {
+        //ELIMINAR CLIENTES
+        /* public void movimientoInventarioClientes(string nombre, string apellido, string direccion , string correo , string telefono, string codigoc) {
             foreach (var clientes in ListadeClientes)
             {
-                clientes.Nombre == clientes.nombre ;
-            
-        }}*/
-         //INGRESO DE PRODUCTOS
+
+               if (clientes.Codigoc == codigoc) {
+                   nombre = nombre.Trim();
+                   apellido = apellido.Trim();
+                   direccion = direccion.Trim();
+                   correo = correo.Trim();
+                   telefono = telefono.Trim();
+                   codigoc = codigoc.Trim();
+                   Console.WriteLine(nombre);
+                   Console.WriteLine(apellido);
+                   Console.WriteLine(direccion);
+                   Console.WriteLine(correo);
+                   Console.WriteLine(telefono);
+                   Console.WriteLine(codigoc);
+                } 
+            }
+        }*/
+        
         public void ingresoDeInventario() {
             string codigo = "";
             string cantidad = "";
