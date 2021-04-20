@@ -19,6 +19,10 @@ static void Main(string[] args)
         Console.WriteLine("3 - Salida de Inventario");
         Console.WriteLine("4 - Ajuste Positivo");
         Console.WriteLine("5 - Ajuste Negativo");
+        Console.WriteLine("6 - Ingreso de Clientes");
+        Console.WriteLine("7 - Clientes");
+        Console.WriteLine("8 - Crear Orden");
+        Console.WriteLine("9 - Crear Orden");
         Console.WriteLine("0 - Salir");
         opcion = Console.ReadLine();
 
@@ -41,6 +45,22 @@ static void Main(string[] args)
 
             case "5":
             inventario.AjusteNegativoDeInventario() ;
+            break;
+
+            case "6":
+            inventario.ingresoDeClientes() ;
+            break;
+
+            case "7":
+            inventario.listarClientes();
+            break;
+
+            case "8":
+            inventario.CrearOrden();
+            break;
+
+            case "9":
+            inventario.ListarOrdenes();
             break;
             default:
             break;
